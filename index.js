@@ -1,6 +1,9 @@
 function dwarfRollCall(dwarves) {
   for (var i = 0; i < dwarves.length; i++) {
     dwarves[i] = dwarves.indexOf(dwarves[i]) + 1 + ". " + dwarves[i] + " ";
+    if (dwarves[i] === dwarves.lenght -1) {
+      dwarves[i] = dwarves.indexOf(dwarves[i]) + 1 + ". " + dwarves[i];
+    }
     }
   return dwarves.join('');
 
